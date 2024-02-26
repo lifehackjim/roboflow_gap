@@ -4,8 +4,8 @@ import typing as t
 
 import cv2
 
-from roboflow_gap.custom_types import PathLike
 from roboflow_gap.models import ImageData
+from roboflow_gap.models.custom_types import PathLike
 from roboflow_gap.utils.dates import get_now
 from roboflow_gap.utils.paths import pathify
 
@@ -92,7 +92,6 @@ class GatherFromFile(GatherBase):
                 error_exc=error_exc,
             )
 
-            # Exit loop if not in watch mode or max_seconds exceeded
             if not self.watch:
                 self.logger.debug("Ending gather due to watch=False context=%s", context)
                 break
