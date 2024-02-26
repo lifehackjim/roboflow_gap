@@ -21,6 +21,7 @@ Enter roboflow_gap. Designed to streamline your computer vision projects, it wil
 - **User Support**: Ensuring that even complex computer vision tasks are within reach, with straightforward instructions and supportive feedback for users at any technical level.
 - **TBD**:
   - **WebUI**: A visual interface to monitor the progress and outcomes of your roboflow_gap workflows, making it even easier to see the results of your computer vision projects in real time.
+  - **Benchmarks**: Ability to benchmark different models and tasks to find the best fit for your use case.
 
 ## Analyzer Task Types
 

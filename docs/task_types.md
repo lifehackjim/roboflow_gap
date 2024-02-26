@@ -3,9 +3,9 @@
 
 Computer vision lets computers understand images in various ways.
 
-Some models can sort images by category. They can tell if a picture shows a dog, a cat, or something else.
+Some models can sort images by category. They can tell if an image shows a dog, a cat, or something else.
 
-Other models find and show where things are in a picture. They can point out exactly where in the picture a dog is sitting or a car is parked.
+Other models find and show where things are in an image. They can point out exactly where in the image a dog is sitting or a car is parked.
 
 Then, there are models that do both jobs. They can spot all the cars in a parking lot and also say what kind they are.
 
@@ -33,7 +33,7 @@ Acts like a smart sorting hat for images. A computer views an image and labels i
 
 ### Pros
 
-1. Easy to Set Up: Simpler and need less computing power.
+1. Easy to Set Up: Simpler and needs less computing power.
 2. Very Useful: Handy in a wide range of fields, from healthcare to enhancing smartphone capabilities.
 3. Great for Simple Images: Shines when images have one main subject, like a singular cat or a lone tree.
 
@@ -117,7 +117,7 @@ Takes apart an image into its pieces, marking every object down to the exact pix
 ### Pros
 
 1. Super Detailed: Draws exact lines around each object, even if they're touching or overlapping.
-2. In-Depth Understanding: Gives a full breakdown of everything in the picture, making it clearer what's what.
+2. In-Depth Understanding: Gives a full breakdown of everything in the image, making it clearer what's what.
 3. Works in a Crowd: Really good at picking out individual items in busy images where lots of things are close together.
 
 ### Cons
@@ -334,15 +334,15 @@ Automatically separates things in an image, figuring out what's what all on its 
 
 ### Pros
 
-1. No Pre-tagged Pictures Needed: Works without needing images to be labeled in advance.
+1. No Pre-tagged Images Needed: Works without needing images to be labeled in advance.
 2. Finds New Things: Can spot and identify objects that haven't been specifically taught.
-3. Works on Many Types of Pictures: Good at dealing with a wide range of images without needing special adjustments.
+3. Works on Many Types of Images: Good at dealing with a wide range of images without needing special adjustments.
 
 ### Cons
 
 1. Results Can Vary: Sometimes, it might not separate things in the way you expect.
 2. Needs Further Analysis: Just splitting up an image doesn't always tell you what the parts are.
-3. Performance Fluctuates: How well it works can change a lot depending on the picture.
+3. Performance Fluctuates: How well it works can change a lot depending on the image.
 
 ### Inference Models
 
