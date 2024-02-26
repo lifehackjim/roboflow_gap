@@ -1,14 +1,25 @@
+
 # Task Types in Computer Vision
 
-Computer vision lets computers understand pictures in various ways.
+Computer vision lets computers understand images in various ways.
 
-Some models can sort pictures by category. They can tell if a picture shows a dog, a cat, or something else.
+Some models can sort images by category. They can tell if a picture shows a dog, a cat, or something else.
 
 Other models find and show where things are in a picture. They can point out exactly where in the picture a dog is sitting or a car is parked.
 
 Then, there are models that do both jobs. They can spot all the cars in a parking lot and also say what kind they are.
 
-In short, computer vision uses different models to make sense of pictures, from simple sorting to identifying and locating objects.
+In short, computer vision uses different models to make sense of images, from simple sorting to identifying and locating objects.
+
+1. [classification](#classification)
+2. [object-detection](#object-detection)
+3. [instance-segmentation](#instance-segmentation)
+4. [keypoint-detection](#keypoint-detection)
+5. [embedding](#embedding)
+6. [gaze-detection](#gaze-detection)
+7. [lmm](#lmm)
+8. [ocr](#ocr)
+9. [unsupervised-segmentation](#unsupervised-segmentation)
 
 ## classification
 
@@ -107,12 +118,12 @@ Takes apart an image into its pieces, marking every object down to the exact pix
 
 1. Super Detailed: Draws exact lines around each object, even if they're touching or overlapping.
 2. In-Depth Understanding: Gives a full breakdown of everything in the picture, making it clearer what's what.
-3. Works in a Crowd: Really good at picking out individual items in busy pictures where lots of things are close together.
+3. Works in a Crowd: Really good at picking out individual items in busy images where lots of things are close together.
 
 ### Cons
 
 1. Really Complex: Needs a lot of computer power to run because it's doing a very detailed job.
-2. Needs a Lot of Prep: To learn this skill, it needs a ton of pictures where every little part has been marked out by hand.
+2. Needs a Lot of Prep: To learn this skill, it needs a ton of images where every little part has been marked out by hand.
 3. Takes Its Time: Not the quickest, especially when compared to simpler tasks like just spotting objects or labeling them.
 
 ### Inference Models
@@ -190,7 +201,7 @@ Turns images into a special format that lets computers figure out which ones loo
 ### Examples
 
 1. Recommendation Systems: Suggests items you might like, similar to ones you've viewed before.
-2. Photo Organization: Helps sort your digital photo collection into groups by what's in the pictures.
+2. Photo Organization: Helps sort your digital photo collection into groups by what's in the images.
 3. Anomaly Detection: Identifies items or features that stand out from the norm, useful in quality control.
 
 ### Pros
@@ -281,7 +292,7 @@ image (Any): The input image or a list of images to process.
 
 ## ocr
 
-Turns pictures with writing into text you can use.
+Turns images with writing into text you can use.
 
 ### Examples
 
@@ -318,12 +329,12 @@ Automatically separates things in an image, figuring out what's what all on its 
 ### Examples
 
 1. Scene Decomposition: Breaks down busy scenes into understandable parts, like cars from trees.
-2. Object Discovery: Finds and recognizes things in pictures without needing to know what they are ahead of time.
+2. Object Discovery: Finds and recognizes things in images without needing to know what they are ahead of time.
 3. Background Separation: Distinguishes the main subject from everything else in the background.
 
 ### Pros
 
-1. No Pre-tagged Pictures Needed: Works without needing pictures to be labeled in advance.
+1. No Pre-tagged Pictures Needed: Works without needing images to be labeled in advance.
 2. Finds New Things: Can spot and identify objects that haven't been specifically taught.
 3. Works on Many Types of Pictures: Good at dealing with a wide range of images without needing special adjustments.
 
@@ -335,7 +346,7 @@ Automatically separates things in an image, figuring out what's what all on its 
 
 ### Inference Models
 
-- SegmentAnything: This model is like a curious explorer, looking at pictures and figuring out on its own what's in them, which is great for sorting through lots of images or finding interesting patterns.
+- SegmentAnything: This model is like a curious explorer, looking at images and figuring out on its own what's in them, which is great for sorting through lots of images or finding interesting patterns.
 
 ### Inference Model Infer Arguments
 

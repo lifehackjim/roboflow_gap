@@ -1,14 +1,41 @@
-# roboflow_gap
-Fill in the GAPs: Gather, Analyze, and Process computer vision images within seconds
+# roboflow_gap: Simplifying Computer Vision for Everyone
+
+Fill in the GAP: gather, analyze, and process images and videos in seconds — no coding required.
+
+## Inspiration
+
+Drawing inspiration from the user-friendly approaches of [Ollama](https://ollama.com/) and [AnythingLLM](https://useanything.com/), our mission is to democratize advanced image processing and analysis with [Roboflow](https://roboflow.com/), making it accessible to all.
 
 ## Introduction
-There are three main steps in computer vision: gathering, analyzing, and processing images. 
 
-The process of writing all of the tooling for using computer vision in python can be time-consuming and error-prone, and requires a lot of domain-specific knowledge, more than a little bit of trial and error, and at least some level of expertise in python.
+The computer vision workflow involves three key stages: gathering, analyzing, and processing images. 
 
-This is where Roboflow GAP comes in. Roboflow GAP aims to be a python library that provides:
-- Gather: A simple and easy-to-use interface for gathering images from various sources: camera on your computer, screenshot from your computer screen, movies or images from the web, movies or images from your computer, and more.
-- Analyze: An easy way to use Roboflow's powerful computer vision libraries to analyze images and identify objects within them
-- Process: An easy way to process images to add bounding boxes, labels, and other useful information. This would also allow for future lookup of information about the images, such as the wikipedia page for a given object, or other useful information.
-- A CLI tool to make it easy to use Roboflow GAP from the command line
-- Support for prompting the user for input when necessary, with self-help messages and error messages that are easy to understand
+Creating tools for these stages typically demands considerable time, domain expertise, and coding skills.
+
+Enter roboflow_gap. Designed to streamline your computer vision projects, it will eventually offer:
+
+- **Gather**: An intuitive interface to collect images from cameras, screenshots, the internet, and more.
+- **Analyze**: Straightforward access to Roboflow's comprehensive computer vision libraries for detailed image analysis and detection.
+- **Process**: Handy tools for adding annotations to images, setting the stage for further insights and connections, such as linking identified objects to their Wikipedia entries.
+- **CLI Tool**: An easy-to-use command-line interface that brings the power of roboflow_gap to all users, regardless of their technical skills.
+- **User Support**: Ensuring that even complex computer vision tasks are within reach, with straightforward instructions and supportive feedback for users at any technical level.
+- **TBD**:
+  - **WebUI**: A visual interface to monitor the progress and outcomes of your roboflow_gap workflows, making it even easier to see the results of your computer vision projects in real time.
+
+## Analyzer Task Types
+
+Supported by the [inference python package](https://github.com/roboflow/inference/), a broad spectrum of task types awaits, each tailored for specific capabilities and use cases.
+
+Dive into our [Task Types documentation](docs/task_types.md) for an in-depth exploration of each task type.
+
+Quick highlights include:
+
+- **classification**: Easily labels images with categories but doesn't show where objects are.
+- **object-detection**: Finds and shows where objects are in an image.
+- **instance-segmentation**: Marks the exact edges of each object in an image, showing every detail.
+- **keypoint-detection**: Points out important spots on objects, like where parts of the body are.
+- **embedding**: Changes images so that similar ones can be grouped together, helping with searching and sorting.
+- **gaze-detection**: Figures out where someone is looking, helping us understand what catches their eye.
+- **lmm (Language Models for Machines)**: Combines seeing images and understanding words to describe what's in the images or answer questions about them.
+- **ocr (Optical Character Recognition)**: Turns text in images into text you can edit and search.
+- **unsupervised-segmentation**: Finds and separates objects in images all by itself, without needing examples to learn from.
