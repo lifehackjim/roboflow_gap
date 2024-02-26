@@ -34,12 +34,12 @@ class GatherFromFile(GatherBase):
         self.logger: logging.Logger = logging.getLogger(
             f"{self.__class__.__module__}.{self.__class__.__name__}"
         )
-        # things to think about
+        # things to think about later
         # how to handle CLI interface for this, and how to allow python programmers
         # to use the same CLI interface
         # that will use environment variables and/or prompting as necessary
 
-    async def gather(self) -> t.AsyncIterator[ImageData]:
+    async def run(self) -> t.AsyncIterator[ImageData]:
         """An asynchronous generator yielding ImageData instances."""
         while True:
             date_started = get_now()
@@ -53,7 +53,7 @@ class GatherFromFile(GatherBase):
                 "modified": False,
                 "gatherer": self.__class__.__name__,
             }
-
+            self.logger.debug("Starting gather context=%s", context)
             if context["exists"]:
                 path_stat = self.path.stat()
 
@@ -93,11 +93,20 @@ class GatherFromFile(GatherBase):
             )
 
             # Exit loop if not in watch mode or max_seconds exceeded
-            if not self.watch or (
+            if not self.watch:
+                self.logger.debug("Ending gather due to watch=False context=%s", context)
+                break
+
+            if (
                 isinstance(self.max_seconds, (int, float))
                 and self.max_seconds > 0
                 and (get_now() - date_started).total_seconds() > self.max_seconds
             ):
+                self.logger.debug(
+                    "Ending gather due to max_seconds=%s exceeded context=%s",
+                    self.max_seconds,
+                    context,
+                )
                 break
 
             await asyncio.sleep(self.sleep)
