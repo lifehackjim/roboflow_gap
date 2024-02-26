@@ -1,7 +1,7 @@
 import pathlib
 import typing as t
 
-from roboflow_gap.custom_types import PathLike
+from roboflow_gap.models.custom_types import PathLike
 
 
 def pathify(

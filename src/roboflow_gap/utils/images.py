@@ -1,6 +1,6 @@
 import cv2
 
-from roboflow_gap.custom_types import PathLike
+from roboflow_gap.models.custom_types import PathLike
 
 
 def load_image_path(path: PathLike) -> cv2.typing.MatLike:
