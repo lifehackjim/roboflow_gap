@@ -2,7 +2,6 @@ import logging
 import typing as t
 from pathlib import Path
 
-# Assuming supervision and inference are accessible and correctly imported
 import supervision as sv
 from inference import get_model
 from inference.core.models.base import Model as InferenceModel

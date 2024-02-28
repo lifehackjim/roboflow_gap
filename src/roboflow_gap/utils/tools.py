@@ -28,6 +28,17 @@ def get_subcls_method_args(
     return [get_method_args(x, method) for x in get_subcls(cls)]
 
 
+def listify(value: t.Any) -> t.List[t.Any]:
+    """Convert value to list."""
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return value
+    if isinstance(value, tuple):
+        return list(value)
+    return [value]
+
+
 # BUG: Some of the Model subclasses do not have task_type as a class attribute,
 # it only gets set in the __init__ method
 """

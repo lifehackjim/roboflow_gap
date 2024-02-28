@@ -17,7 +17,7 @@ class ImageData(BaseModel):
         description="Processed image frame.",
     )
     context: t.Optional[t.Dict[str, t.Any]] = Field(
-        default=None,
+        default_factory=dict,
         description="Context of the original image frame.",
     )
     analysis: t.Optional[t.Dict[str, t.Any]] = Field(
